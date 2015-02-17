@@ -26,18 +26,22 @@
 
 
 		<script type = "text/javascript">
-			var mG = document.getElementById('makeGreen');
-			var g = document.getElementById('green');
+			var makeGrn = document.getElementById('makeGreen');
+			var grn = document.getElementById('green');
 			var mR = document.getElementById('makeRed');
 			var r = document.getElementById('red');
 
-			if(mG.addEventListener){
-         		mG.addEventListener("click", function() { g.style.backgroundColor = 'green';});
+			if(makeGrn.addEventListener){
+         		makeGrn.addEventListener("click", function() { 
+         			grn.style.backgroundColor = 'green';
+         		});
     		} 
 
-    		
+
     		if(mR.addEventListener){
-         		mR.addEventListener("click", function() { r.style.backgroundColor = 'red';});
+         		mR.addEventListener("click", function() { 
+         			r.style.backgroundColor = 'red';
+         		});
     		}
 
 
