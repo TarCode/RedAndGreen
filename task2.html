@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Task 2: Red And Green</title>
+
+		<link rel = "stylesheet" type = "text/css" href ="">
+		<style type = "text/css">
+			#red{
+				height: 300px;
+				width: 300px;
+				border: 5px solid black;
+			}
+			#green{
+				height: 300px;;
+				width: 300px;
+				border: 5px solid black;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div id = "green"></div>
+		<button type = "button" id = "makeGreen">Make Green</button>
+		<div id = "red"></div>
+		<button type = "button" id = "makeRed">Make Red</button>
+
+
+		<script type = "text/javascript">
+			var mG = document.getElementById('makeGreen');
+			var g = document.getElementById('green');
+			var mR = document.getElementById('makeRed');
+			var r = document.getElementById('red');
+
+			if(mG.addEventListener){
+         		mG.addEventListener("click", function() { g.style.backgroundColor = 'green';});
+    		} 
+
+    		
+    		if(mR.addEventListener){
+         		mR.addEventListener("click", function() { r.style.backgroundColor = 'red';});
+    		}
+
+
+		</script>
+	</body>
+
+
+</html>
