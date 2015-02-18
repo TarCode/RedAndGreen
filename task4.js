@@ -1,6 +1,6 @@
 (function(){
 
-		var count = 0;
+		var count = 1;
     
 		document.getElementById('btnCol').addEventListener("click", function(){
 
