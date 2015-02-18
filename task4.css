@@ -1,0 +1,15 @@
+
+#red{
+	height: 300px;
+	width: 300px;
+	background-color: red;
+	border: 5px solid black;
+	display: none;
+}
+#green{
+	
+	height: 300px;
+	width: 300px;
+	background-color: green;
+	border: 5px solid black;
+}
