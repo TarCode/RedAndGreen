@@ -3,8 +3,8 @@
 var assert = {
 
 			count : 0,
-			pass: 0,
-			equals : function(msg, result){
+			pass : 0;
+			equals : function(exRes, result, funcName){
 
 				
 	 			var nuBlock = document.createElement('div');
@@ -17,13 +17,13 @@ var assert = {
 				document.body.appendChild(nuBlock); 
 	 			
 				var rg = new RedOrGreen(nuBlock.id);
-				if(msg === result){
-					nuBlock.innerHTML = "PASS";
+				if(exRes === result){
 					this.pass++;
+					nuBlock.innerHTML = funcName;
 					rg.makeGreen();
 				}
 				else{
-					nuBlock.innerHTML = "FAIL";
+					nuBlock.innerHTML = funcName;
 					rg.makeRed();
 				}
 				this.count++;
@@ -34,9 +34,6 @@ var assert = {
 var TestMyCode = {
 
 	 run: function(name, testPar){
-	 		
-
-
 			this.name = name;
 			testPar(assert);
 			
